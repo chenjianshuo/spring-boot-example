@@ -28,24 +28,30 @@ public class CrawlerService implements CommandLineRunner{
 
     @Override
     public void run(String... strings) throws Exception {
-        /*List<Proxy2> ps = new ArrayList<>();
-        Proxy2 proxy21 = new Proxy2("45.32.119.145",1008);
+        List<Proxy2> ps = new ArrayList<>();
+        Proxy2 proxy21 = new Proxy2("47.95.201.41",3128);
+        Proxy2 proxy23 = new Proxy2("163.125.69.198",8888);
+        Proxy2 proxy25 = new Proxy2("39.104.87.115",8080);
+        Proxy2 proxy24 = new Proxy2("106.113.242.247",9999);
 
 
-        ps.add(proxy21);*/
+        ps.add(proxy21);
+        ps.add(proxy23);
+        ps.add(proxy24);
+        ps.add(proxy25);
 
         new VWCrawler.Builder().setUrl("https://blog.csdn.net/qqHJQS")
                 .setHeader("User-Agent","Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36")
                 .setTargetUrlRex("https://blog.csdn.net/qqHJQS/article/details/[0-9]+")
                 .setTargetUrlRex("https://blog.csdn.net/qqhjqs/article/details/[0-9]+")
-                /*.setProxys(ps)
+                .setProxys(ps)
                 .setAbsProxyExtracter(new AbstractProxyExtractor() {
                     @Override
                     public Proxy extractProxyIp() {
                         Proxy2 proxy2 = getProxy2s().get(0);
                         return new Proxy(Proxy.Type.HTTP, new InetSocketAddress(proxy2.getIp(), proxy2.getPort())) ;
                     }
-                })*/
+                })
                 .setTimeOut(5000)
                 .setThreadCount(5)
                 .setPageParser(new com.github.vector4wang.service.CrawlerService<Blog>() {
