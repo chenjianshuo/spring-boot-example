@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-example.iml" filepath="$PROJECT_DIR$/spring-boot-example.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot1.5.6-mybatis/spring-boot-mybatis.iml" filepath="$PROJECT_DIR$/spring-boot1.5.6-mybatis/spring-boot-mybatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot2.0.4-mybatis/spring-boot2.0.4-mybatis.iml" filepath="$PROJECT_DIR$/spring-boot2.0.4-mybatis/spring-boot2.0.4-mybatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-crawler/springbootcrawler.iml" filepath="$PROJECT_DIR$/spring-boot-crawler/springbootcrawler.iml" />
+    </modules>
+  </component>
+</project>
