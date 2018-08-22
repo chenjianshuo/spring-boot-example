@@ -1,8 +1,8 @@
 package com.cjs.crawler.service;
 
-import com.cjs.crawler.cache.DataCache;
 import com.cjs.crawler.domin.Blog;
 import com.cjs.crawler.utils.MD5Utils;
+import com.cjs.crawler.cache.DataCache;
 import com.github.vector4wang.VWCrawler;
 import com.github.vector4wang.proxy.AbstractProxyExtractor;
 import com.github.vector4wang.proxy.Proxy2;

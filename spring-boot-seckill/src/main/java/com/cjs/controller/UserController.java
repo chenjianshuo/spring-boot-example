@@ -1,4 +1,4 @@
-package com.cjs.controller;
+package com.cjs.Controller;
 
 /**
  * Created by chenjianshuo on 2018/8/14 22:19.
